@@ -7,7 +7,251 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.eeheader {
+  text-align: left;
+  color: white;
+  background-color: rgb(29, 28, 28);
+  object-fit: contain;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.eeheader h1 {
+  font-size: 100px;
+  margin-top: -20px;
+}
+
+.eeheader h3 {
+  margin-top: -60px;
+}
+
+.eeheader img {
+  float: left;
+  max-height: 150px;
+  padding-right: 10px;
+}
+
+.playerReq {
+  font-size: 20px;
+  margin-left: 30px;
+  margin-bottom: -20px;
+}
+
+.playerNo {
+  background-color: black;
+  color: white;
+}
+
+.listContent {
+  margin-left: 30px;
+  margin-bottom: -15px;
+  font-size: 20px;
+  width: 600px;
+}
+
+.listContent #step {
+  color: white;
+  width: 70px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.listContent #content {
+  padding-left: 5px;
+  margin-top: -50px;
+  border-left: solid;
+  border-width: 1px;
+  position: relative;
+}
+
+#text-content {
+  width: 550px;
+}
+
+.listContent {
+  margin-left: 30px;
+  margin-bottom: -15px;
+  font-size: 20px;
+  width: 600px;
+}
+
+.sublistContent #step {
+  color: white;
+  width: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sublistContent #content {
+  margin-top: -30px;
+  max-width: 700px;
+  position: relative;
+}
+
+.sublistContent #text-content {
+  width: 500px;
+}
+
+#sub-image {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  max-width: 300px;
+  max-height: 300px;
+  cursor: pointer;
+}
+
+#subimages {
+  padding-left: 25px;
+  padding-top: -5px;
+  padding-bottom: -5px;
+}
+
+#sub-image:hover {opacity: 0.9;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+#tick {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+#subtick {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+#tick::before, #subtick::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 50%;
+  width: 3px;
+  background-color: #ffffff;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+#tick::after, #subtick::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+.listContent:hover #step {
+  background-color: rgb(163, 22, 140) !important;
+  cursor: pointer;
+}
+
+.sublistContent #step:hover {
+  background-color: rgb(163, 22, 140) !important;
+  cursor: pointer;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  position: absolute;
+  left: 100px;
+  margin-top: -50px;
+  padding: 3px;
+}
+
+.listContent:hover #content {
+  background-color: black;
+  color: white;
+  border-left: black;
+  border-width: 1px;
+}
+
+.listContent:hover i {
+  border-color: white;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.centre-right {
+  position: absolute;
+  right: 120px;
+  margin-top: 14px;
 }
