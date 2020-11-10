@@ -6,7 +6,7 @@ const MapDatabase = new Map([
         ["Hit the gong in each of the 4 altar rooms and collect the champion heads", 
           "Danu Altar Room:::https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-4/f/fd/Screen_Shot_2018-10-10_at_4.10.26_PM_%282%29.png?width=1280",
           "Ra Altar Room:::https://assets.primagames.com/media/files/black-ops-4-ix-gongs.jpg/PRIMA/resize/618x0", 
-          "Zeus Altar Room:::https://www.gamespew.com/wp-content/uploads/2018/10/ix-Black-Ops-4-Zombies-3-min.jpg",
+          "Zeus Altar Room",
           "Odin Altar Room:::https://oyster.ignimgs.com/mediawiki/apis.ign.com/call-of-duty-black-ops-4/d/d7/Screen_Shot_2018-10-10_at_4.38.02_PM.png"],
         ["Collect the 3 Brazen Bull Shield parts",
           "Temple of Ra (2 locations):::https://www.powerpyx.com/wp-content/uploads/Snapshot_20181012_152702-1-1024x580.jpg https://www.powerpyx.com/wp-content/uploads/Snapshot_20181012_155234-1-1024x580.jpg ",
